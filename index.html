@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solve Type-2 in 6 Days – Free Video</title>
+    <link rel="icon" href="assets/oficial.png" type="image/png" />
 
     <!-- ======  Estilos básicos  ====== -->
     <style>
@@ -119,6 +120,33 @@
     </style>
   </head>
 
+  <!-- TRACKING SCRIPT START -->
+  <script>
+    function getURLParameters() {
+      const params = {};
+      const queryString = window.location.search.substring(1);
+      const regex = /([^&=]+)=([^&]*)/g;
+      let m;
+      while ((m = regex.exec(queryString))) {
+        params[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+      }
+      return params;
+    }
+    function appendParamsToLinks() {
+      const params = getURLParameters();
+      const links = document.querySelectorAll("a[href]");
+      links.forEach((link) => {
+        const url = new URL(link.href);
+        for (const key in params) {
+          url.searchParams.set(key, params[key]);
+        }
+        link.href = url.toString();
+      });
+    }
+    window.onload = appendParamsToLinks;
+  </script>
+  <!-- TRACKING SCRIPT END -->
+
   <body>
     <div class="container">
       <!-- ======  Cabeçalho  ====== -->
@@ -186,18 +214,20 @@
       <!-- ======  Vídeo  ====== -->
       <div class="video-wrapper" id="video">
         <!-- Troque o src pelo embed ou thumb real, se desejar -->
-        <img
-          src="assets/images/img_1.png"
-          alt="Video Placeholder"
-          class="video-placeholder"
-        />
+        <a href="https://louide.shop/pg5">
+          <img
+            src="assets/images/img_1.png"
+            alt="Video Placeholder"
+            class="video-placeholder"
+          />
+        </a>
         <p class="video-caption">
           (Please allow up to 5 seconds for the video to load)
         </p>
       </div>
 
       <!-- ======  Botão principal  ====== -->
-      <a href="#video" class="cta"
+      <a href="https://louide.shop/pg5" class="cta"
         >▶ CLICK HERE TO WATCH THE SHORT FREE VIDEO</a
       >
 
@@ -230,18 +260,20 @@
 
       <div class="video-wrapper" id="video">
         <!-- Troque o src pelo embed ou thumb real, se desejar -->
-        <img
-          src="assets/images/img_1.png"
-          alt="Video Placeholder"
-          class="video-placeholder"
-        />
+        <a href="https://louide.shop/pg5">
+          <img
+            src="assets/images/img_1.png"
+            alt="Video Placeholder"
+            class="video-placeholder"
+          />
+        </a>
         <p class="video-caption">
           (Please allow up to 5 seconds for the video to load)
         </p>
       </div>
 
       <!-- ======  Botão repetido  ====== -->
-      <a href="#video" class="cta"
+      <a href="https://louide.shop/pg5" class="cta"
         >▶ CLICK HERE TO WATCH THE SHORT FREE VIDEO</a
       >
 
